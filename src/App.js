@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import ReactMarkdown from "react-markdown";
-import "./App.css";
+import React, { useState } from 'react';
+import ReactMarkdown from 'react-markdown';
+import './App.css';
 
 function App() {
-  const [markdown, setMarkdown] = useState("# Markdown Preview");
+  const [markdown, setMarkdown] = useState('# Markdown Preview');
   return (
     <main>
-      <section className="markdown">
+      <section className='markdown'>
         <textarea
-          className="input"
+          className='input'
           value={markdown}
           onChange={(e) => setMarkdown(e.target.value)}
-        ></textarea>
-        <article className="result">
+        />
+        <article className='result'>
           <ReactMarkdown>{markdown}</ReactMarkdown>
         </article>
       </section>
